@@ -1,0 +1,85 @@
+
+body{
+    background-image: url("015.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 2px 2px rgba(124,185,232,0.5);
+    word-spacing: 7px;
+    margin:0;
+}
+
+nav{
+    background-color: rgba(255,128,255,0.4);
+    padding: 6px;
+    border-bottom: 1px solid white;
+}
+
+i {
+    color: white;
+    font-size: 34px;
+    text-shadow: 5px 6px rgba(0,0,0,0.5);
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+}
+
+
+button {
+    background: inherit;
+    border: hidden;
+    box-shadow: transparent;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 5px 5px 3px rgb(0,0,0);
+    margin: 7px;
+}
+
+.white {
+    color: white;
+}
+
+span {
+    font-size: 3em;
+    text-shadow: 1px 2px 2px rgba(255,0,255,0.5);
+}
+
+.spider-man_img {
+    height: 600px;
+    width: 400px;
+    float: right;
+    border: 1px solid white;
+    border-radius: 6px;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.65);
+}
+
+section {
+    text-align: center;
+}
+
+
+iframe {
+    border: 2px solid white;
+    border-radius: 6px;
+}
+
+footer {
+    clear: both;
+}
+
+.footer_img {
+    height: 60px;
+    width: 65px;
+    border: 2px solid white;
+    border-radius: 6px;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.75);
+}

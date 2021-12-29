@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 17px;
+}
+
+main {
+    background-image: url("d2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 600px;
+}
+
+div {
+    height: 800px;
+    width: 700px;
+    padding: 0;
+}
+
+button {
+    background-color: rgba(255,255,255,0.5);
+    padding: 15px;
+    border: 3px solid white;
+    border-radius: 12px;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 17px;
+}
+
+button:hover {
+    background-color: rgba(230,0,38,0.5);
+    border-color: rgba(230,0,38,0.5);
+
+}
+
+a {
+    color: black;
+}
+
+

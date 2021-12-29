@@ -1,0 +1,73 @@
+body{
+    background-image: url("savanna.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Fruktur', cursive;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h3, #center {
+    text-align: center;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+h2, h3 {
+    font-size: 18px;
+}
+
+p {
+    line-height: 22px;
+    border: 12px solid rgba(255,213,0,0.3);
+    border-radius: 15px;
+}
+
+#cat {
+    text-align: center;
+}
+
+#cats {
+    border: 25px solid white;
+}
+
+#lions, #lion, #TableTitle, table {
+    color: #e0d594;
+}
+
+#TableTitle {
+    text-align: center;
+    padding: 1px;
+    background-color:rgba(0,128,21,0.2);
+    border: 2px solid white;
+    border-radius: 12px;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+
+table{
+    width: 80%;
+    border: 1px solid white;
+    border-collapse: separate;
+    margin: auto;
+    border-radius:12px;
+}
+
+th, td {
+    padding: 5px;
+    border-left:solid white 1px;
+    border-top:solid white 1px;
+}
+
+th {
+    background-color: rgba(0,128,21,0.2);
+    border-top: none;
+}
+
+td:first-child, th:first-child {
+    border-left: none;
+}
