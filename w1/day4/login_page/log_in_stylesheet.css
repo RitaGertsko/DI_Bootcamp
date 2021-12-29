@@ -1,0 +1,159 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: #e8e8e8;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    height: 350px;
+    width: 350px;
+    padding: 50px;
+    display: inline-block;
+}
+
+.log_in, h1 {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+form {
+    position: relative;
+    bottom: 45px;
+    right: 15px;
+}
+
+.input_style {
+    font-family: 'Poppins', sans-serif;
+    height:45px;
+    width: 350px;
+    padding: 0 15px;
+    margin: 11px;
+    border: none;
+    background-color: lightgrey;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    height: 19px;
+    width: 19px;
+    border: 3px solid darkgray;
+    position: relative;
+    top: 6px;
+    cursor: pointer;
+    outline: none;
+}
+
+
+input[type="checkbox"]::after {
+    font-family: "Font Awesome 5 free";
+    content: "\f00c";
+    font-weight: 700;
+    color: white;
+    display: none;
+}
+
+
+input[type="checkbox"]:hover {
+    background-color: white;
+}
+
+
+input[type="checkbox"]:checked {
+    background-color: #5bcd3e;
+}
+
+
+input[type="checkbox"]:checked::after {
+    display: block;
+}
+
+
+#checkbox_wrap {
+    color: gray;
+    position: relative;
+    right: 24px;
+}
+
+
+#submit {
+    position: relative;
+    top: 35px;
+    left: 15px;
+    height: 45px;
+    width: 375px;
+    border: none;
+    background-color: purple;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+p {
+    color: gray;
+}
+
+.connect_icon {
+    color: #e8e8e8;
+    text-shadow: 2px 0 0 gray, -2px 0 0 gray, 0 2px 0 gray, 0 -2px 0 gray, 1px 1px gray, -1px -1px 0 gray, 1px -1px 0 gray, -1px 1px 0 gray;
+    font-size: 25px;
+    padding: 10px;
+    position: relative;
+    top: 10px;
+}
+
+#forgot_password_link {
+    position: relative;
+    left: 80px;
+    color: gray;
+    text-decoration: none;
+}
+
+ #register {
+     padding: 170px 60px;
+     margin: 40px 0 0 0;
+     background: url("purple2.jpg") no-repeat;
+     background-size: cover;
+     display: inline-block;
+ }
+
+ #register_icon {
+     color: white ;
+     font-size: 90px;
+ }
+ 
+.register_items {
+     color: white;
+     position: relative;
+     bottom: 45px;
+ }
+
+#register_button {
+    height: 50px;
+    width: 150px;
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 25px;
+}
+
+#register_a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+#register_arrow_icon {
+    font-size: 20px;
+}
+
+ footer{
+     position: relative;
+     right: 240px;
+     bottom: 50px;
+     color: gray;
+ }
