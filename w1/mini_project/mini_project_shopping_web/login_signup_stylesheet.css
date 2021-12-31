@@ -1,0 +1,63 @@
+
+body {
+    background-color: rgba(255,102,25,0.7);
+    margin:0;
+    font-family: 'Irish Grover', cursive;
+    font-size: 25px;
+    text-align: center;
+}
+
+form {
+    position: relative;
+    top: 140px;
+    display: inline-block;
+    padding: 70px;
+    border: 40px dotted rgba(255,242,179,0.5);
+    margin: 0;
+}
+
+label {
+    display: inline-block;
+    width: 140px;
+    text-align: right;
+    text-shadow: 0 0 10px lightyellow;
+}
+
+input {
+    background-color: rgba(255,242,179,0.5);
+    border-radius: 12px;
+    border: 2px solid black;
+    height: 25px;
+    width: 250px;
+    font-family: 'Irish Grover', cursive;
+    font-size: 19px;
+}
+
+input:last-child {
+    background-color: rgba(255,242,179,0.5);
+    border-radius: 12px;
+    height: 40px;
+    width: 100px;
+}
+
+#reset, #submit, button {
+    font-family: 'Irish Grover', cursive;
+    font-size: 20px;
+    background-color: rgba(255,242,179,0.5);
+    border-radius: 12px;
+    border: 2px solid black;
+}
+
+button, #submit {
+    height: 40px;
+    width: 120px;
+}
+
+#reset:hover, #submit:hover, button:hover {
+    cursor: pointer;
+    border-color: rgba(255,242,179,0.5);
+}
+
+#reset:active, #submit:active, button:active {
+    border-color: gold;
+}
