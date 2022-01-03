@@ -1,0 +1,186 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    font-size: 17px;
+    background-image: url("map.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+h1 {
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: 900;
+}
+
+
+section {
+    display: flex;
+    justify-content: space-around;
+    margin: 5% 0;    /* !!! */
+}
+
+
+.offers_wrap {
+    text-align: center;
+    font-size: 12px;
+    line-height: 5px;
+    font-weight: 800;
+}
+
+.p_sizing {
+    font-size: 1.8rem;
+    color: rgb(0, 0, 180);
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.comment_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 20%;
+    padding: 0;
+    position: relative;
+    font-size: 15px;
+}
+
+
+#comment_wrap1 { 
+    top:-1rem;
+}
+
+
+#comment_wrap2 {
+    top: 3.5rem;
+}
+
+#comment_wrap3 {
+    top: 1.5rem;
+}
+
+
+.comment {
+    min-height: 50%;
+    padding: 5% 2% 8% 2%;
+    margin: 0;
+    background-color: white;
+}
+
+
+.comment_img_wrap {
+   position: absolute;
+   top: 50%;
+   left: 40%;
+}
+
+
+.comment_img_wrap img {
+    height: 50px;
+    width: 40px;
+    border-radius: 55%;
+}
+
+
+#orange, #purple, #green  {
+    min-height: 35%; 
+    padding: 10% 2%  0 2%;
+    margin: 0;
+    color: white;
+}
+
+
+#orange {
+    background-color: orange;
+}
+
+
+#purple {
+    background-color: purple;
+}
+
+
+#green {
+    background-color: green;
+}
+
+
+
+
+
+@media only screen and (max-device-width: 480px)  {
+    html, body {
+        height: 100vh;
+        overflow: auto;
+    }
+    
+    
+    h1 {
+        font-size: 3em;
+    }
+
+    .offers_wrap{
+        font-size: 2em;
+        line-height: 1em;
+    }
+
+    .p_sizing {
+        font-size: 1.7em;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+    }
+
+
+    .comment_wrap {
+        position: relative;
+        font-size: 1.1em;
+        font-weight: 700;
+        width: 80%;
+    }
+
+    #comment_wrap1, #comment_wrap2, #comment_wrap3 { 
+        top:0;
+    }
+
+
+    .comment {
+        padding: 5% 2% 9% 2%;
+    }
+
+
+    .comment_img_wrap {
+        position: absolute;
+        top: 51%;
+     }
+     
+     
+    .comment_img_wrap img {
+        height: 110px;
+        width: 80px;
+        
+     }
+
+
+    #orange, #purple, #green {
+        padding: 10% 2%;
+    }
+    
+}
