@@ -83,11 +83,12 @@ select {
 
 
 .main-grigs-items {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
     max-width: 70%;
-    min-height: 100%;
     padding: 5px;
     margin: 0;
-    justify-self: center;
 }
 
 .first-part-grid-item {
