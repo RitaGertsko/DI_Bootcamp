@@ -1,0 +1,10 @@
+header {
+    background: url("img.jpg") no-repeat center;
+    background-size: cover;
+    height: 60vh !important;
+}
+
+nav a {
+    color: white !important;
+
+}
