@@ -1,0 +1,94 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Catamaran', sans-serif;
+    height: 100vh;
+}
+
+#logo {
+    padding: 0;
+    height: 3em;
+    width: 3.1em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #FFFFCC;
+}
+
+header {
+    background: url("bg-img.jpg") no-repeat center;
+    background-size: cover;
+    border-bottom: 3px solid #FFFFCC;
+    height: 60%;
+}
+
+
+li a {
+    text-shadow: 0 0 2px #002511;
+    color: #FFFFCC !important;
+}
+
+main {
+    height: 150vh;
+    background: darkseagreen;
+    border-bottom: 3px solid #FFFFCC;
+}
+
+.b-side-border {
+    border-bottom: 2px solid #FFFFCC;
+}
+
+.l-side-border {
+    border-left: 2px solid #FFFFCC;
+}
+
+#portfolio {
+    height: 20%;
+    width: 40%;
+    align-self: flex-end !important;
+}
+
+#portrait-img {
+    border: 2px solid #FFFFCC;
+    height: 5rem;
+    width: 5rem;
+}
+
+.portfolio-img {
+    padding: 0;
+    border: 2px solid #FFFFCC;
+    border-radius: 7px;
+    height: 12rem;
+    width: 10rem;
+}
+
+#blog {
+    width: 4%;
+}
+
+.card {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; /* ??? */
+    color: black;
+    outline: 2px solid #FFFFCC;
+    height: 60%;
+    width: 12.1rem;
+    background: rgba(231, 231, 231, 0.3);
+}
+
+.card-img-top {
+    border-bottom:2px solid #FFFFCC;
+    height: 8.5rem;
+    width: 12rem;
+}
+
+footer {
+    height: 50%;
+    background: url("bg-img.jpg") no-repeat bottom;
+    background-size: cover;
+}
+
+form {
+    
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Document</title>
+</head>
+<body>
+  <header class="">
+      <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <img id="logo" class="navbar-brand rounded-circle" src="logo.jpg" alt="logo img">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto fs-5 fw-bold">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <section id="Jumbotron" class="p-5 mt-3 h-75">
+          <div class="w-50 m-4">
+            <h1 class="mb-3">Hello!, Welcome To My official Website</h1>
+            <h4 class="mb-3 text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime assumenda accusantium amet possimus deleniti. Nulla recusandae optio vitae similique alias!</h4>
+            <a class="btn btn-outline-success text-capitalize" href="" role="button">see more</a>
+          </div>
+        </section>
+  </header>
+  <main id="flex-body" class="p-5 overflow-hidden">
+    <div class="d-flex flex-column">
+      <section class="px-2 d-flex flex-row">
+        <div class="px-1 h-50 me-3">
+          <h2 id="about-me" class="b-side-border text-capitalize">about me</h2>
+          <div>
+            <img src="portrait-img.jpg" alt="portrait image" id="portrait-img" class="rounded-circle">
+          </div>
+        </div>
+        <div class="l-side-border px-2 w-25">
+          <h3>M. Rita Gertskovich</h3>
+          <p class="text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Nobis quis adipisci voluptas vitae corporis perspiciatis quibusdam sapiente velit aliquam, 
+            esse ea expedita officiis assumenda suscipit laboriosam, amet tenetur dolores porro et. 
+            Quis, nisi non ab corrupti accusantium officiis repellendus, est deleniti doloremque animi facere, 
+            dicta aliquam qui itaque laborum vitae.
+          </p>
+        </div>
+      </section>
+      <section id="portfolio" class="d-flex flex-column">
+        <h2 class="b-side-border align-self-end text-capitalize">portfolio</h2>
+        <div class="d-flex flex-row gap-4 flex-wrap">
+          <a href="#"><img src="portfolio1.jpg" alt="portfolio image" class="portfolio-img"></a>
+          <a href="#"><img src="portfolio2.png" alt="portfolio image" class="portfolio-img"></a>
+          <a href="#"><img src="portfolio1.jpg" alt="portfolio image" class="portfolio-img"></a>
+          <a href="#"><img src="portfolio2.png" alt="portfolio image" class="portfolio-img"></a>
+          <a href="#"><img src="portfolio1.jpg" alt="portfolio image" class="portfolio-img"></a>
+          <a href="#"><img src="portfolio2.png" alt="portfolio image" class="portfolio-img"></a>
+        </div>
+      </section>
+      <section class="px-2">
+        <h2 id="blog" class="b-side-border text-capitalize">blog</h2>
+        <div class="d-flex flex-row gap-4 flex-wrap">
+          <a href="#" class="text-decoration-none">
+            <div class="card">
+              <img src="blog-img.jpg" alt="blog image" class="blog-img card-img-top">
+              <div class="card-body">
+                <h5 class="card-title text-capitalize text-decoration-underline">creativity</h5>
+                <p class="card-text overflow-hidden text-wrap">Suscipit ex iste consequatur voluptate error quia dicta, veniam delectus, dolores pariatur nostrum quidem sapiente, maxime odit?</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="text-decoration-none">
+            <div class="card">
+              <img src="blog-img2.jpg" alt="blog image" class="blog-img card-img-top">
+              <div class="card-body">
+                <h5 class="card-title text-capitalize text-decoration-underline">inspiration</h5>
+                <p class="card-text overflow-hidden text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ex iste consequatur voluptate error quia dicta, veniam delectus, dolores pariatur nostrum quidem sapiente, maxime odit?</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="text-decoration-none">
+            <div class="card">
+              <img src="blog-img3.jpg" alt="blog image" class="blog-img card-img-top">
+              <div class="card-body">
+                <h5 class="card-title text-capitalize text-decoration-underline">team work</h5>
+                <p class="card-text overflow-hidden text-wrap">veniam delectus, dolores pariatur nostrum quidem sapiente, maxime odit?</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="p-5 d-flex flex-row gap-3 justify-content-center">
+    <section>
+      <h3 class="text-capitalize b-side-border fw-bold">get in touch</h3>
+      <div>
+        <i class="fab fa-linkedin fs-4 m-1"></i>
+        <i class="fab fa-instagram fs-4 m-1"></i>
+        <i class="fab fa-facebook-square fs-4 m-1"></i>
+        <i class="fas fa-envelope fs-4 m-1"></i>
+      </div>
+    </section>
+    <section>
+      <form action="#" class="l-side-border px-2 d-inline-flex flex-column justify-content-center align-items-flex-end">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+      </form>
+    </section>
+    <!-- <a class="" href=".navbar" role="button">up</a> -->
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
