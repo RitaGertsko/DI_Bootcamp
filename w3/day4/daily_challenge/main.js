@@ -3,12 +3,13 @@
 
 let sentence = "The movie is not that bad, I like it";
 
-let wordNot = sentence.match("not");
+let wordNot = sentence.indexOf("not");
 
-let wordBad = sentence.match("bad");
+let wordBad = sentence.indexOf("bad");
 
-if (wordBad < wordNot) {
-    console.log (sentence.replace('not that bad', 'good'))
+if (wordBad > wordNot) {
+    let toRemove = sentence.substring(wordNot, wordBad + 3);
+    console.log (sentence.replace(toRemove, 'good'))
 } else {
     console.log (sentence)
 }
