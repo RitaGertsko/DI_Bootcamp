@@ -1,18 +1,22 @@
-let userInput = prompt("please insert several words (separated by commas)");
-let wordArray = userInput.split(",");
+let userInput = prompt("please insert several words (separated by commas):")
+  .split(",")
+  .map((word) => word.trim());
 
 let maxLength = 0;
+userInput.forEach((word) => {
+  maxLength = Math.max(maxLength, word.length);
+});
 
-for(let word of wordArray){
-    if (maxLength < word.length){
-        maxLength = word.length;
-    }
-}
+let newArray = new Array(maxLength + 4).fill("*").join("");
 
-console.log("*".repeat(maxLength + 4));
-for(let word of wordArray){
-    console.log(`* ${word}  *`)
-}
+let stars = "*".repeat(maxLength + 4);
 
-console.log("*".repeat(maxLength + 4));
+userInput = userInput.map(
+  (word) => word + new Array(maxLength - word.length).fill(" ").join("")
+);
 
+console.log(stars);
+userInput.forEach((word) => {
+  console.log(`*  ${word} *`);
+});
+console.log(stars);
