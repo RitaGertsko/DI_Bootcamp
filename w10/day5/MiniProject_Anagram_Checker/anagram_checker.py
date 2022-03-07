@@ -16,10 +16,7 @@ class AnagramChecker:
                 self.dictionary[word] = [list_word.lower()]
 
     def is_valid_word(self, word):
-        if word in self.text_list_file:
-            return True
-        else:
-            return False
+        return word in self.text_list_file
 
     def get_anagrams(self, user_word):
         if str(sorted(user_word)) not in self.dictionary.keys():
