@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product details</title>
+</head>
+<body>
+    {% for product in products %}
+    {% if product['ProductId'] == product_id %}
+        <h2 style="text-decoration: underline">{{ product['ProductId'] }}'s details:</h2>
+        <h3>{{product['Name']}}</h3>
+        <p>{{product['Description']}}</p>
+        <p>{{product['Price']}} {{product['CurrencyCode']}}</p>
+        <p>Back to the list products <a href=" {{ url_for('products') }} ">click link</a></p>
+    {% endif %}
+    {% endfor %}
+</body>
+</html>

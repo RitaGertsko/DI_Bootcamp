@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <div class="d-flex p-2 m-2 flex-wrap gap-3 justify-content-center">
+        <div class="card" style="width: 20rem;">
+            <img src="/static/{{ product['ProductPicUrl'] }}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{ product.Name }}</h5>
+                <p class="card-text">{{ product.ProductId }}</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Category: {{ product.Category }}</li>
+                <li class="list-group-item">Price: {{ product.Price }}$</li>
+                <li class="list-group-item">Status: {{ product.Status }}</li>
+            </ul>
+            <div class="card-body">
+                <a href="{{ url_for('products') }}" class="btn btn-primary">Go Back</a>
+                <a href="{{ url_for('add_product_to_cart', product_id=product['ProductId']) }}" class="btn btn-success" target="_blank">Add to cart</a>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Colors</title>
+    <style>
+        body {
+            color: black;
+            font-size: 2em;
+            background-color: {{color}};
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <ul>
+        <li>
+            <a href="{{ url_for('blue')}}" style="color: black;">blue</a>
+        </li>
+        <li>
+            <a href="{{ url_for('red')}}" style="color: black;">red</a>
+        </li>
+        <li>
+            <a href="{{ url_for('green')}}" style="color: black;">green</a>
+        </li>
+        <li>
+            <a href="{{ url_for('yellow')}}" style="color: black;">yellow</a>
+        </li>
+    </ul>
+</nav>
+
+</body>
+</html>

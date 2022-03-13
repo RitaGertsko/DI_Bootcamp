@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="d-flex p-2 m-2 flex-wrap gap-3 justify-content-center">
+    {% for product in products %}
+    <div class="card text-center" style="width: 35rem;">
+        <div class="card-body">
+            <h5 class="card-title">{{product.Name}}</h5>
+            <p class="card-text">{{product.ProductId}}</p>
+            <img src="./static/{{ product['ProductPicUrl'] }}" class="card-img-top" alt="..." style="height: 15em; width:20em">
+            <p class="card-text">{{product.Description}}</p>
+            <a href="{{ url_for('product_info', product_id=product['ProductId']) }}" class="btn btn-primary" target="_blank">Details</a>
+            <a href="{{ url_for('add_product_to_cart', product_id=product['ProductId']) }}" class="btn btn-success" target="_blank">Add to cart</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock content %}
