@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="d-flex flex-column text-center align-items-center gap-3">
+    <div><h1>hi!</h1></div>
+    <div><h3>Lets work on your cv!</h3></div>
+    <div><a href="{{ url_for( 'my_form' ) }}" class="btn btn-outline-success" role="button">Form</a></div>
+</div>
+
+{% endblock content %}

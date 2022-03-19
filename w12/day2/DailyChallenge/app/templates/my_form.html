@@ -1,0 +1,111 @@
+{% extends "layout.html" %}
+
+{% block navbar %}
+{{ super() }}
+{% endblock navbar %}
+
+{% block content %}
+<div class="container p-3">
+    <form class="d-flex flex-column g-3" method="POST" action="{{ url_for('my_form') }}">
+        {{ form.hidden_tag() }}
+        <div class="row pt-2 pb-3">
+            <h3>Personal Information: </h3>
+            <div class="col-6">
+                {{ form.firstName.label(class_=" form-label ") }}
+                {{ form.firstName( class_=" form-control ", type_=" text ")}}
+            </div>
+            <div class="col-md-6">
+                {{ form.lastName.label(class_=" form-label ") }}
+                {{ form.lastName( class_=" form-control ", type_=" text ")}}
+            </div>
+            <div class="col-md-6">
+                {{ form.phoneNumber.label(class_=" form-label ") }}
+                {{ form.phoneNumber( class_=" form-control ") }}
+            </div>
+            <div class="col-6">
+                {{ form.email.label(class_=" form-label ") }}
+                {{ form.email( class_=" form-control ", type_="email") }}
+            </div>
+            <div class="col-md-12">
+                {{ form.address.label(class_=" form-label ") }}
+                {{ form.address( class_=" form-control ", type_=" text ") }}
+            </div>
+        </div>
+        <div class="row pt-3 pb-3">
+            <h3>Education: </h3>
+            <div class="col-8">
+                {{ form.instituteName.label(class_=" form-label ") }}
+                {{ form.instituteName( class_=" form-control ", type_=" text ") }}
+            </div>
+            <div class="col-4">
+                {{ form.educationType.label(class_=" form-label ") }}
+                {{ form.educationType( class_=" form-control ", type_=" text ") }}
+            </div>
+            <div class="col-6">
+                {{ form.started.label(class_=" form-label ") }}
+                {{ form.started( class_=" form-control ") }}
+            </div>
+            <div class="col-6">
+                {{ form.ended.label(class_=" form-label ") }}
+                {{ form.ended( class_=" form-control ") }}
+            </div>
+            <div class="col-8">
+                {{ form.instituteName2.label(class_=" form-label ") }}
+                {{ form.instituteName2( class_=" form-control ", type_=" text ") }}
+            </div>
+            <div class="col-4">
+                {{ form.educationType2.label(class_=" form-label ") }}
+                {{ form.educationType2( class_=" form-control ", type_=" text ") }}
+            </div>
+            <div class="col-6">
+                {{ form.started2.label(class_=" form-label ") }}
+                {{ form.started2( class_=" form-control ") }}
+            </div>
+            <div class="col-6">
+                {{ form.ended2.label(class_=" form-label ") }}
+                {{ form.ended2( class_=" form-control ") }}
+            </div>
+        </div>
+        <div class="row pt-3 pb-3">
+            <h3>Last place of work: </h3>
+            <div class="col-8">
+                {{ form.companyName.label(class_=" form-label ") }}
+                {{ form.companyName( class_=" form-control ") }}
+            </div>
+            <div class="col-4">
+                {{ form.position.label(class_=" form-label ") }}
+                {{ form.position( class_=" form-control ") }}
+            </div>
+            <div class="col-6">
+                {{ form.startedWork.label(class_=" form-label ") }}
+                {{ form.startedWork( class_=" form-control ") }}
+            </div>
+            <div class="col-6">
+                {{ form.endedWork.label(class_=" form-label ") }}
+                {{ form.endedWork( class_=" form-control ") }}
+            </div>
+        </div>
+        <div class="row pt-3 pb-3">
+            <h3>Skills:</h3>
+            <div class="col-12">
+                {{ form.skill1.label(class_=" form-label ") }}
+                {{ form.skill1( class_=" form-control ", type_=" text ") }}
+            </div>
+            <div class="col-12">
+                {{ form.skill2.label(class_=" form-label ") }}
+                {{ form.skill2( class_=" form-control ", type_=" text ") }}
+            </div>
+        </div>
+        <div class="row pt-3 pb-2">
+            <h3>Hobbies:</h3>
+            <div class="col-12">
+                {{ form.hobbieInfo.label(class_=" form-label ") }}
+                {{ form.hobbieInfo( class_=" form-control ", type_=" text ") }}
+            </div>
+        </div>
+        <div class="col-12">
+            {{ form.submit(class_="btn btn-outline-primary") }}
+        </div>
+    </form>
+</div>
+{% endblock content %}

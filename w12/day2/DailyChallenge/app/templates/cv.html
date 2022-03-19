@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="d-flex flex-row gap-5 h-100">
+    <aside class="sidebar text-center">
+        <ul class="d-flex flex-column gap-2">
+            <li class="border-bottom fs-4">
+                <span>{{ data.firstName }}</span>
+                <span>{{ data.lastName }}</span>
+            </li>
+            <li>{{ data.email }}</li>
+            <li>{{ data.phoneNumber }}</li>
+            <li class="border-bottom">{{ data.address }}</li>
+            <li>{{ data.educationType }}</li>
+            <li class="border-bottom">{{ data.educationType2 }}</li>
+            <li>{{ data.skill1 }}</li>
+            <li class="border-bottom">{{ data.skill2 }}</li>
+            <li class="icon">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </li>
+        </ul>
+    </aside>
+    <div class="d-flex flex-column gap-5 pt-3">
+        <div class="h-25 w-50 overflow-auto text-break">
+            <h2>Profile</h2>
+            <ul class="d-flex flex-column">
+                <li>{{ data.skill1 }}</li>
+                <li>{{ data.skill2 }}</li>
+                <li>{{ data.hobbieInfo }}</li>
+            </ul>
+        </div>
+        <div class="h-25 w-50">
+            <h2>Education</h2>
+            <ul class="d-flex flex-column">
+                <li>{{ data.instituteName }}</li>
+                <li>{{ data.educationType }}</li>
+                <li>{{ data.started }}</li>
+                <li>{{ data.ended }}</li>
+                <br>
+                <li>{{ data.instituteName2 }}</li>
+                <li>{{ data.educationType2 }}</li>
+                <li>{{ data.started2 }}</li>
+                <li>{{ data.ended2 }}</li>
+            </ul>
+        </div>
+        <div class="h-25 w-50">
+            <h2>Work Experience</h2>
+            <ul class="d-flex flex-column">
+                <li>{{ data.companyName }}</li>
+                <li>{{ data.position }}</li>
+                <li>{{ data.startedWork }}</li>
+                <li>{{ data.endedWork }}</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

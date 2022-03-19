@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="d-flex flex-column align-items-center p-3 ">
+    <div class="text-center p-2">
+        <h1 class="title-size-header">My Cities List!</h1>
+        <a href="{{ url_for('add_city') }}" class="btn btn-outline-success sticky-top" role="button">Add City</a>
+        {% if cities_list|length == 0 %}
+        <div class="text-center p-3">
+            <h2>Your Cities List is Empty!</h2>
+        </div>
+        {% else %}
+            {% for city in cities_list %}
+            <div class="text-center p-3">
+                <div class="card blue-card-border" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title capitalize title-size">{{ city.cityName }}</h5>
+                    </div>
+                    <ul class="list-group list-group-flush text-start items-size">
+                        <li class="list-group-item capitalize">City Country: {{ city.cityCountry }}</li>
+                        <li class="list-group-item">City Residents: {{ city.residents }}</li>
+                        <li class="list-group-item">City Area: {{ city.cityArea }}</li>
+                        <li class="list-group-item">City Latitude: {{ city.cityLatitude }}</li>
+                        <li class="list-group-item">City Longitude: {{ city.cityLongitude }}</li>
+                    </ul>
+                    <a href="{{ url_for('delete_city_from_cities_list', cityName=city.cityName) }}" class="btn">Delete</a>
+                </div>
+            </div>
+            {% endfor%}
+        {% endif %}
+    </div>
+</div>
+
+{% endblock content %}
