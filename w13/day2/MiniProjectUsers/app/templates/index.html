@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Database</title>
+</head>
+<body>
+<h4>1. Display all the users (with all the details)</h4>
+<div>
+    {% for user in data %}
+        <p>{{ user }}</p>
+    {% endfor %}
+</div>
+<br>
+<h4>2. Only display the user(s) who live(s) in “Roscoeview”.</h4>
+<div>
+    {% for user in data %}
+        {% if user.userCity == 'Roscoeview' %}
+            <p>{{ user }}</p>
+        {% endif %}
+    {% endfor %}
+</div>
+
+<br>
+<h4>3. Only display the first 5 users</h4>
+<div>
+        {% for user in data %}
+            {% if user.user_id <= 5 %}
+                <p>{{ user }}</p>
+            {% endif %}
+        {% endfor %}
+</div>
+
+<br>
+<h4>4. Only display the user(s) which zipcode starts with the number 5</h4>
+<div>
+        {% for user in data %}
+            {% if user.zipCode[0] == '5' %}
+                <p>{{ user }}</p>
+            {% endif %}
+        {% endfor %}
+</div>
+</body>
+</html>
